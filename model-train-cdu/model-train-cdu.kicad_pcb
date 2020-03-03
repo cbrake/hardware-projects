@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.6)
-    (drawings 0)
+    (drawings 5)
     (tracks 68)
     (zones 0)
     (modules 20)
@@ -85,9 +85,9 @@
       (subtractmaskfromsilk false)
       (outputformat 1)
       (mirror false)
-      (drillshape 1)
+      (drillshape 0)
       (scaleselection 1)
-      (outputdirectory ""))
+      (outputdirectory "mfg"))
   )
 
   (net 0 "")
@@ -1756,6 +1756,14 @@
       (rotate (xyz 0 0 0))
     )
   )
+
+  (gr_text "JAB CDU v1" (at 81 -38) (layer F.SilkS)
+    (effects (font (size 2 2) (thickness 0.2)))
+  )
+  (gr_line (start 122 -58) (end 40.8 -58) (layer Edge.Cuts) (width 0.05) (tstamp 5E14DB92))
+  (gr_line (start 122 24.6) (end 122 -58) (layer Edge.Cuts) (width 0.05))
+  (gr_line (start 40.8 24.6) (end 122 24.6) (layer Edge.Cuts) (width 0.05))
+  (gr_line (start 40.8 -58) (end 40.8 24.6) (layer Edge.Cuts) (width 0.05))
 
   (segment (start 80.4 -1.584) (end 80.4 -3.6) (width 1.016) (layer F.Cu) (net 1))
   (segment (start 88.8 3.8) (end 85.784 3.8) (width 1.016) (layer F.Cu) (net 1))
